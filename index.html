@@ -1,14 +1,81 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="DK">
+
 <head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
-	<link rel="stylesheet" href="/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejendomsværdi</title>
+    <link rel="stylesheet" href="import.css">
+    <script src="dropdown.js" defer></script>
+    <script src="search_array.js" defer></script>
 </head>
+
 <body>
-	
-	<script src="/app.js" defer></script>
+    <header>
+        <div class="company_logo">
+            <img src="/images/templates/logo.png" alt="Ejendomsværdi logo">
+            <h1>EJENDOMSVÆRDI</h1>
+        </div> <!-- company_logo -->
+        <div class="top_nav">
+            <ul>
+                <li class="services"><a href="services.html" alt="Se vores ydelser">Se alle ydelser ></a>
+                    <ul class="top_nav_dropdown">
+                        <li><a href="#">Bygherrerådgivning</a></li>
+                        <li><a href="#">Teknisk due Dilligence</a></li>
+                        <li><a href="#">Energirådgivning</a></li>
+                        <li><a href="#">Energimærkning</a></li>
+                        <li><a href="#">Statiske beregninger</a></li>
+                        <li><a href="#">Tilstandsvurdering</a></li>
+                        <li><a href="#">Brandrådgivning</a></li>
+                        <li><a href="#">Institutioner</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="top_nav_lastchild">
+                <ul>
+                    <li><a href="Contact.html" alt="Kontakt">Kontakt</a></li>
+                    <li><a href="References.html" alt="Referencer">Referencer</a></li>
+                    <li><a href="About.html" alt="Om os">Om os</a></li>
+                    <li>
+                        <form class="searchForm">
+                            <input type="search" name="search" class="searchForm_input">
+                            <button type="submit">Søg</button>
+                        </form>
+                    </li>
+                </ul>
+            </div> <!-- top_nav_lastchild -->
+        </div> <!-- top_nav -->
+    </header>
+    <p id="results"></p> <!-- søgeresultater -->
+    <section>
+        <div class="hero_background">
+            <div class="hero_section">
+                <div class="text_container"> <!-- tekst og overskrift -->
+                    <h2>Lækker Overskrift</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, sequi repellendus
+                            aperiam
+                            nihil
+                            culpa quisquam. Mollitia molestiae, corporis provident fugit impedit, est quas quam in
+                            libero,
+                            dignissimos non aspernatur ab!</p>
+                </div> <!-- tekst og overskrift -->
+                <div class="form_container">
+                    <form action=""></form>
+                    <label for="name">Navn:</label>
+                    <input type="text" id="name" name="name" placeholder="Indtast dit navn...">
+
+                    <label for="mail">E-mail:</label>
+                    <input type="email" id="email" name="email" placeholder="Indtast din e-mail...">
+
+                    <label for="message">Din besked:</label>
+                    <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                </div> <!-- form_container -->
+            </div> <!-- hero_section -->
+        </div> <!-- hero_background -->
+    </section>
+    <section>
+
+    </section>
 </body>
+
 </html>
